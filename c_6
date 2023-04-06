@@ -1,0 +1,162 @@
+```c
+
+#include <stdio.h>
+
+int main(void)
+
+{
+
+    char op;
+    int x, y, result;
+    
+    printf("수식을 입력하시오(예: 2 + 5)>>");
+    scanf("%d %c %d", &x, &op, &y);
+
+    switch (op)
+
+    {
+
+        case '+':
+        result = x+y; 
+        break;
+
+        case '-':
+        result = x-y; 
+        break;
+
+        case '*':
+        result = x*y; 
+        break;
+
+        case '/':
+        result = x/y; 
+        break;
+
+        case '%':
+        result = x%y; 
+        break;
+    
+        default:
+        printf("지원되지 않은 연산자입니다. \n");
+
+        break;
+    }
+    
+}
+
+```
+
+```c
+
+#include <stdio.h>
+
+int main(viod)
+
+{
+
+    int i = 1;
+
+    while ( i < 10 )
+    {
+        printf("%d * %d = %d\n", 2, i, 2 * i);
+        i++;
+    }
+    
+}
+
+```
+
+```c
+
+#include <stdio.h>
+
+int main(viod)
+
+{
+    int n,sum=0, i=1;
+
+    printf("정수를 입력하시오:");
+    scanf("%d", &n);
+
+    while(i<=n)
+
+    {
+        sum+=i;
+        i++;
+    }
+
+    printf("1부터 %d까지의 합은 %d입니다.", n, sum);
+
+}
+
+```
+
+```c
+
+#include <stdio.h>
+
+int main(void)
+
+{
+    int n,sum=0, i=0;
+    printf("정수를 입력하시오:");
+    scanf("%d", &n);
+
+    while(i<=n)
+    {
+        sum+=i;
+        i= i+2;
+    }
+    printf("1부터 %d까지의 짝수합은 %d입니다", n, sum);
+    
+}
+
+```
+
+```c
+
+#include <stdio.h>
+
+int main(void)
+
+{
+    int n,a,b, i=1;
+    scanf("%d", &n);
+
+    while (i<=n)
+    {
+        scanf("%d %d", &a, &b);
+        printf("%d\n", a+b);
+        i++;
+    }
+    
+}
+
+```
+
+```c
+
+#include <stdio.h>
+
+int main(void)
+
+{
+    int i = 0;
+    do
+    {
+        printf("1---새로만들기\n");
+        printf("2---파일열기\n");
+        printf("3---파일닫기\n");
+        printf("하나를 선택하시오.\n");
+        scanf("%d", &i);
+
+    } while (i<1 || i>3);
+
+    printf("선택된 메뉴=%d\n, i");
+    return 0;
+    
+}
+
+```
+
+
