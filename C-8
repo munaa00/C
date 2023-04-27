@@ -1,0 +1,178 @@
+```c
+#include <stdio.h>
+
+int max(int x, int y)
+{
+    if( x > y )
+        return x;
+
+    else
+        return y;
+
+}
+
+int main(viod)
+{
+    int x,y,larger;
+
+    printf("정수 2개를 입력하시오: ");
+    scanf("%d %d", &x, &y);
+
+    larger = max (x, y);
+    printf("더 큰 값은 %d입니다. \n", larger);
+
+    return 0;
+
+}
+
+```
+
+```c
+#include <stdio.h>
+
+int max(int x, int y)
+{
+    if(x > y)
+        return x;
+
+    else
+        return y;
+
+}
+
+int main(void)
+{
+    int x, y, larger;
+    printf("정수 2개를 입력하시오: ");
+    scanf("%d %d", &x, &y);
+
+    larger = max(x, y);
+    printf("더 큰 값은 %d입니다. \n", larger);
+    return 0;
+}
+
+```
+
+```c
+
+#include <stdio.h>
+
+int get_integer(void)
+{
+    int value;
+
+    printf("정수를 입력하시오: ");
+    scanf("%d", &value);
+
+    return value;
+    
+}
+
+```
+
+```c
+
+#include <stdio.h>
+
+int get_integer()
+{
+    int value;
+    printf("정수를 입력하시오: ");
+    scanf("%d", &value);
+    return value;
+}
+
+int add(int x, int y)
+{
+    return x + y;
+}
+
+int main(void)
+{
+    int x = get_integer();
+    int y = get_integer();
+
+    int sum = add(x, y);
+    printf("두수의 합은 %d입니다. \n", sum);
+    return 0;
+}
+
+```
+
+```c
+
+#include <stdio.h>
+
+int factorial(int n)
+{
+    int result = 1;
+
+    for (int i = 1; i <=n; i++)
+    result *=i;
+
+    return result;
+}
+
+int main(viod)
+{
+    int n;
+    printf("알고 싶은 팩토리얼의 값은? ");
+    scanf("%d", &n);
+    printf("%d!의 값은 %d입니다. \n", n, factorial(n));
+
+    return 0; 
+}
+
+```
+
+```c
+
+#include <stdio.h>
+
+void printMenu()
+{
+    printf("==================================\n");
+    printf(" 'c' 섭씨온도에서 화씨온도로 변환 \n");
+    printf(" 'c' 화씨온도에서 섭씨온도로 변환 \n");
+    printf(" 'q' 종료\n");
+    printf("==================================\n");
+}
+
+double F2C(double f_temp)
+{
+    return (f_temp - 32.0) * 5.0 / 9.0;
+}
+
+int main(void)
+{
+    char choice;
+    double temp;
+
+    while (1)
+    {
+        printMenu();
+        printf("메뉴에서 선택하세요 : ");
+        choice = getchar();
+        if (choice == 'q') break;
+        else if (choice == 'c')
+        {
+            printf("섭씨온도: ");
+            scanf("%lf", &temp);
+            printf("화씨온도: %lf \n\n", C2F (temp));
+
+        }
+        else if (choice == 'f')
+        {
+            printf("화씨온도: ");
+            scanf("%lf", &temp);
+            printf("섭씨온도: %lf \n\n", F2C (temp));
+            
+        }
+        getchar();
+    }
+    return 0;
+}
+
+```
+
+
