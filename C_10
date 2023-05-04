@@ -1,0 +1,108 @@
+```c
+
+#include <stdio.h>
+
+int main()
+{
+	int n;
+
+	scanf("%d",&n);
+
+	for(int i=0;i<n;i++)
+    {
+		for(int j=0;j<n;j++)
+        {
+            if(j<n-i-1) 
+            printf(" ");
+			else printf("*");
+		}
+		printf("\n");
+	}
+	return 0;
+}
+
+```
+
+```c
+
+#include <stdio.h>
+
+int get_integer(viod)
+
+{
+    int value;
+
+    printf("정수를 입력하시오 : \n");
+    scanf("%d", &value);
+
+    return value;
+
+}
+
+int add (int x, int y)
+
+{ return x + y; }
+
+int minus (int x, int y)
+
+{ return x - y; }
+
+int multi (int x, int y)
+
+{ return x * y; }
+
+int div (int x, int y)
+
+{ return x / y; }
+
+
+int main (void)
+
+{
+    int x = get_integer();
+    int y = get_integer();
+
+    printf("두수의 합은 %d입니다. \n", add(x, y));
+
+    printf("두수의 차은 %d입니다. \n", minus(x, y));
+
+    printf("두수의 곱은 %d입니다. \n", multi(x, y));
+
+    printf("두수의 나누기은 %d입니다. \n", div(x, y));
+
+    return 0;
+}
+
+```
+
+```c
+
+#include <stdio.h>
+
+int factorial(int n)
+
+{
+    
+    int result = 1;
+    for (int i = 1; i <=n; i++)
+    
+    result *=i; 
+    return result;
+
+}
+
+int main(void)
+
+{
+
+    int n;
+    printf( "알고 싶은 팩토리얼의 값은? ");
+    scanf("%d", &n);
+    
+    printf("%d!의 값은 %d입니다.\n", n, factorial(n));
+    return 0;
+
+}
+
+```
+
